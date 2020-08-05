@@ -1,4 +1,4 @@
-package p2accountManagerModel;
+package carCompanyManagerModel;
 
 import java.text.NumberFormat;
 import java.util.HashMap;
@@ -6,10 +6,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public class BankAccount extends Customers{    // PPT  Abstract classes can have implement and non implement methods. Children must implement non implemented methods.
+public class CarCompany extends CarCompanies{    // PPT  Abstract classes can have implement and non implement methods. Children must implement non implemented methods.
 	
 	
-	private String ownerName = "Tom";   // Initialize the Bank Account super class
+	private String companyName = "Tom";   // Initialize the Bank Account super class
 	private String gender = "Male"; //PPT 1  Set to private to encapsulate getters and setters
 	private int age = 40;
 	private List<String> addresses = new LinkedList<>();
@@ -18,11 +18,11 @@ public class BankAccount extends Customers{    // PPT  Abstract classes can have
 	
 	
 	
-	public String getOwnerName() {
-		return ownerName;
+	public String getCompanyName() {
+		return companyName;
 	}
-	public void setOwnerName(String ownerName) {
-		this.ownerName = ownerName;
+	public void setCompanyName(String ownerName) {
+		this.companyName = ownerName;
 	}
 	public String getGender() {
 		return gender;
@@ -53,7 +53,7 @@ public class BankAccount extends Customers{    // PPT  Abstract classes can have
 	
 	double getBalance() { 
 		NumberFormat defaultFormat =
-		NumberFormat.getCurrencyInstance(); String msg = ownerName +  ": " + 
+		NumberFormat.getCurrencyInstance(); String msg = companyName +  ": " + 
 		defaultFormat.format(balance) + " balance";
 		System.out.println(msg); return balance; } public void setBalance(double
 		balance) { this.balance = balance; 
